@@ -27,6 +27,11 @@ def digit_from_list(x):
         result += str(x.pop())
     return int(result)
 
+def digit_from_list_1(x):
+    result = ""
+    while x:
+        result += str(x.pop(0))
+    return int(result)
 
 
 
