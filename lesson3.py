@@ -19,7 +19,7 @@ def discont():
     print(f"total price is {total}")
 
 
-def foo_bar(): #bar - 3, foo - 5, foobar - 3 and 5
+def foo_bar():  # bar - 3, foo - 5, foobar - 3 and 5
     first_div = 3
     second_div = 5
     for_3 = "bar"
@@ -35,7 +35,7 @@ def foo_bar(): #bar - 3, foo - 5, foobar - 3 and 5
     return "done"
 
 
-def sum_of_digit(): # в диапазоне всех lenth_digit значных чисел выводит count чисел, сумма цифр которых равна digit
+def sum_of_digit():  # в диапазоне всех lenth_digit значных чисел выводит count чисел, сумма цифр которых равна digit
     digit = int(input("enter digit"))
     lenth_digits = 5
     count = 5
@@ -62,6 +62,14 @@ def polindrom():
     pass
 
 
+def digits_polindroms(first=10, second=10000):
+    result = []
+    for i in range(first, second):
+        i = str(i)
+        if i == i[::-1]:
+            result.append(int(i))
+    return result
 
-
-
+def digits_polindroms_1(first=10, second=100):
+    result = [i for i in range(first, second) if str(i) == str(i)[::-1]]
+    return result
